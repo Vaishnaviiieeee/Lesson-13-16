@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 16d</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .video-row {
+            display: flex;
+            gap: 15px;
+        }
+        .video-card {
+            width: 300px;
+        }
+        .thumbnail-wrapper {
+            position: relative;
+        }
+        .thumbnail-wrapper img {
+            width: 100%;
+            display: block;
+        }
+        .duration {
+            position: absolute;
+            bottom: 6px;
+            right: 6px;
+            background-color: black;
+            color: white;
+            padding: 2px 5px;
+            font-size: 12px;
+        }
+        .info-row {
+            display: flex;
+            gap: 10px;
+            padding-top: 10px;
+        }
+        .channel-pic-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+        .channel-pic-wrapper img {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        .tooltip {
+            position: absolute;
+            top: 110%;
+            left: 0;
+            background-color: #333;
+            color: white;
+            padding: 6px 10px;
+            font-size: 12px;
+            border-radius: 4px;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+            transition: opacity 0.2s ease;
+            z-index: 1;
+        }
+        .channel-pic-wrapper:hover .tooltip {
+            opacity: 1;
+        }
+        .text-info {
+            flex: 1;
+        }
+        .video-title {
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0 0 4px 0;
+        }
+        .channel-name {
+            font-size: 13px;
+            color: #555;
+            margin: 0;
+        }
+        .meta {
+            font-size: 12px;
+            color: #777;
+            margin: 2px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-row">
+        <div class="video-card">
+            <div class="thumbnail-wrapper">
+                <img src="https://placecats.com/300/170?image=1" alt="video thumbnail">
+                <span class="duration">14:20</span>
+            </div>
+            <div class="info-row">
+                <div class="channel-pic-wrapper">
+                    <img src="https://placecats.com/50/50?image=1" alt="channel pic">
+                    <span class="tooltip">Marques Brownlee</span>
+                </div>
+                <div class="text-info">
+                    <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                    <p class="channel-name">Marques Brownlee</p>
+                    <p class="meta">3.4M views &bull; 6 months ago</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <div class="thumbnail-wrapper">
+                <img src="https://placecats.com/300/170?image=2" alt="video thumbnail">
+                <span class="duration">8:22</span>
+            </div>
+            <div class="info-row">
+                <div class="channel-pic-wrapper">
+                    <img src="https://placecats.com/50/50?image=2" alt="channel pic">
+                    <span class="tooltip">Markiplier</span>
+                </div>
+                <div class="text-info">
+                    <p class="video-title">Try Not To Laugh Challenge #9</p>
+                    <p class="channel-name">Markiplier</p>
+                    <p class="meta">19M views &bull; 4 years ago</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

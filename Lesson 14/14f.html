@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 14f</title>
+    <style>
+        body {
+            height: 3000px;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .sidebars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            display: flex;
+        }
+        .server-list {
+            width: 70px;
+            background-color: #2b2d31;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            padding-top: 12px;
+        }
+        .server-list img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .channel-list {
+            width: 200px;
+            background-color: #313338;
+            color: #ccc;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        .channel-list .info-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            font-size: 13px;
+            color: #999;
+            margin-bottom: 15px;
+        }
+        .channel-list .channel {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebars">
+        <div class="server-list">
+            <img src="https://placecats.com/300/200?image=1" alt="server1">
+            <img src="https://placecats.com/300/200?image=2" alt="server2">
+            <img src="https://placecats.com/300/200?image=3" alt="server3">
+        </div>
+        <div class="channel-list">
+            <div class="info-row">
+                <span>INFO</span>
+                <span>+</span>
+            </div>
+            <div class="channel"># new-videos</div>
+            <div class="channel"># updates</div>
+            <div class="channel"># faq</div>
+        </div>
+    </div>
+</body>
+</html>

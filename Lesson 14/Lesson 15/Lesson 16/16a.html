@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 16a</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 10px 20px;
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+        }
+        .icon-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+        .icon-wrapper img {
+            width: 28px;
+            height: 28px;
+            cursor: pointer;
+        }
+        .tooltip {
+            position: absolute;
+            top: 130%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333;
+            color: white;
+            padding: 4px 8px;
+            font-size: 12px;
+            border-radius: 4px;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s ease;
+        }
+        .icon-wrapper:hover .tooltip {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="icon-wrapper">
+            <img src="https://placecats.com/30/30?image=1" alt="upload">
+            <span class="tooltip">Create</span>
+        </div>
+        <div class="icon-wrapper">
+            <img src="https://placecats.com/30/30?image=2" alt="apps">
+            <span class="tooltip">YouTube apps</span>
+        </div>
+        <div class="icon-wrapper">
+            <img src="https://placecats.com/30/30?image=3" alt="notifications">
+            <span class="tooltip">Notifications</span>
+        </div>
+    </div>
+</body>
+</html>

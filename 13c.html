@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 13c</title>
+    <style>
+        .email-card {
+            display: flex;
+            gap: 12px;
+            width: 400px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-family: Arial, sans-serif;
+        }
+        .email-card img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .content {
+            flex: 1;
+        }
+        .top-row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .sender {
+            font-weight: bold;
+        }
+        .time {
+            color: #777;
+            font-size: 13px;
+        }
+        .subject {
+            font-weight: bold;
+            margin: 2px 0;
+        }
+        .preview {
+            color: #777;
+            font-size: 14px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="email-card">
+        <img src="https://placecats.com/300/200?image=1" alt="Chewy">
+        <div class="content">
+            <div class="top-row">
+                <span class="sender">Chewy Promotions</span>
+                <span class="time">4:58 PM</span>
+            </div>
+            <div class="subject">Biggest sales of the year!</div>
+            <p class="preview">Hey there! We're writing to tell you about our...</p>
+        </div>
+    </div>
+</body>
+</html>

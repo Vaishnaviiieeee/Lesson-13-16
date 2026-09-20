@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 14e</title>
+    <style>
+        body {
+            height: 3000px;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: white;
+            border-bottom: 1px solid #ddd;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .profile .name {
+            font-weight: bold;
+        }
+        .actions {
+            display: flex;
+            gap: 8px;
+        }
+        .actions button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .add-friend {
+            background-color: #1877f2;
+            color: white;
+        }
+        .message {
+            background-color: #e4e6eb;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="profile">
+            <img src="https://placecats.com/300/200?image=1" alt="Oliver Cat">
+            <span class="name">Oliver Cat</span>
+        </div>
+        <div class="actions">
+            <button class="add-friend">Add Friend</button>
+            <button class="message">Message</button>
+        </div>
+    </div>
+</body>
+</html>

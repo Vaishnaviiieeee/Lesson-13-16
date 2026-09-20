@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 13e</title>
+    <style>
+        .inbox {
+            width: 400px;
+            border: 1px solid #ddd;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            padding: 12px 15px;
+            color: #777;
+            font-size: 13px;
+            font-weight: bold;
+            border-bottom: 1px solid #eee;
+        }
+        .email-row {
+            display: flex;
+            gap: 12px;
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .email-row img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .content {
+            flex: 1;
+        }
+        .top-row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .sender {
+            font-weight: bold;
+        }
+        .time {
+            color: #777;
+            font-size: 13px;
+        }
+        .subject {
+            font-weight: bold;
+            margin: 2px 0;
+        }
+        .preview {
+            color: #777;
+            font-size: 14px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="inbox">
+        <div class="header">ALL INBOXES</div>
+        <div class="email-row">
+            <img src="https://placecats.com/300/200?image=1" alt="Chewy">
+            <div class="content">
+                <div class="top-row">
+                    <span class="sender">Chewy Promotions</span>
+                    <span class="time">4:58 PM</span>
+                </div>
+                <div class="subject">Biggest sales of the year!</div>
+                <p class="preview">Hey there! We're writing to tell you about our...</p>
+            </div>
+        </div>
+        <div class="email-row">
+            <img src="https://placecats.com/300/200?image=3" alt="Best Buy">
+            <div class="content">
+                <div class="top-row">
+                    <span class="sender">Best Buy</span>
+                    <span class="time">12:32 PM</span>
+                </div>
+                <div class="subject">Your Best Buy eReceipt</div>
+                <p class="preview">Thank you for shopping at Best Buy, here is...</p>
+            </div>
+        </div>
+        <div class="email-row">
+            <img src="https://placecats.com/300/200?image=2" alt="Netflix">
+            <div class="content">
+                <div class="top-row">
+                    <span class="sender">Netflix</span>
+                    <span class="time">9:00 AM</span>
+                </div>
+                <div class="subject">Here's what's coming soon to Netflix</div>
+                <p class="preview">Brand new movies and shows, old favorites...</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

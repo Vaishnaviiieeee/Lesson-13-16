@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 13g</title>
+    <style>
+        .tweet {
+            display: flex;
+            gap: 12px;
+            width: 500px;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .tweet > img {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .content {
+            flex: 1;
+        }
+        .handle-row {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+        }
+        .username {
+            font-weight: bold;
+        }
+        .handle {
+            color: #657786;
+        }
+        .tweet-text {
+            margin: 8px 0 15px 0;
+        }
+        .link-card {
+            display: flex;
+            border: 1px solid #e1e8ed;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .link-card .thumb {
+            width: 140px;
+            background-color: #dcdcdc;
+        }
+        .link-card .link-content {
+            flex: 1;
+            padding: 12px 15px;
+        }
+        .link-card .site {
+            color: #657786;
+            margin: 0 0 6px 0;
+        }
+        .link-card .title {
+            margin: 0;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tweet">
+        <img src="https://placecats.com/300/200?image=1" alt="avatar">
+        <div class="content">
+            <div class="handle-row">
+                <span class="username">supersimple.dev</span>
+                <span class="handle">@SuperSimpleDev</span>
+            </div>
+            <p class="tweet-text">What is backend web development? A complete overview. New video is up!</p>
+            <div class="link-card">
+                <div class="thumb"></div>
+                <div class="link-content">
+                    <p class="site">youtube.com</p>
+                    <p class="title">Backend web development - a complete overview (2021)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
